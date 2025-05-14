@@ -11,20 +11,29 @@ public class HomeController {
     @GetMapping("/")
     public String index()
     {
-        //System.out.println("Inside  index  controller");
         return "index";
     }
 
     @GetMapping("/login")
     public String login() {
-        //System.out.println("Inside  login  controller");
         return "login";
     }
 
    @GetMapping("/register")
    public String register()
     {
-        //System.out.println("Inside  register  controller");
         return "register";
+    }
+
+    @GetMapping("/products")
+    public String products()
+    {
+        return "product";
+    }
+
+    @GetMapping("/product")
+    public String product()
+    {
+        return "view_product";
     }
 }
